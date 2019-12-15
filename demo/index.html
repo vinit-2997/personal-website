@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./style.css">
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./css/style.css">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,11 +26,15 @@
 </head>
 
 <body>
-    <div style="  background-image: url('./images/city_background.webp'); 
+
+
+    <div id="particles-js">
+
+    <!-- <div style="  background-image: url('./images/city_background.webp'); 
      -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; height:100%; width:100%">
+    background-size: cover; height:100%; width:100%"> -->
 
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -45,7 +49,7 @@
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="projects.html" class="nav-item nav-link">Projects</a>
                 <!-- <a href="#" class="nav-item nav-link" tabindex="-1">Terminal</a> -->
-                <a onclick="launchJSTerminal();" class="terminalHandle">heloooo</a>
+                <a onclick="launchJSTerminal();" class="terminalHandle">new terminal</a>
 
             </div>
       
@@ -71,9 +75,22 @@
         </nav>
     </div> -->
 
+
 <!-- partial:index.partial.html -->
+<div id="header" class="wrapper">
+  <h3 id="h3-id" style="color: aliceblue;">Hi there! I am</h3>
+  <h1 style="color: aliceblue;">VINIT TODAI</h1><span>&nbsp;</span><span class="text" style="color: aliceblue;"></span><span class="cursor">|</span>
 
+  <div class="social">
+    <a href="https://www.linkedin.com/in/vinit-todai" target="_blank"><i class="fa fa-linkedin "></i></a>
+    <a href="https://medium.com/@vinit.todai" target="_blank"><i class="fa fa-medium"></i></a>
+    <a href="https://github.com/vinit-2997" target="_blank"><i class="fa fa-github"></i></a>
+    <a href="https://www.facebook.com/vinit.todai" target="_blank"><i class="fa fa-facebook"></i></a>
+  
+   </div>
 
+</div>
+</div>
 </div>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
@@ -82,8 +99,10 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js'></script>
 
-  <script  src="./script.js"></script>
-  <script src="js/terminal.js"></script>
+  <script  src="./js/script.js"></script>
+  <script src="./js/terminal.js"></script>
+  <!-- <script src="./js/particles.js"></script> -->
+
 
 </body>
 </html>
