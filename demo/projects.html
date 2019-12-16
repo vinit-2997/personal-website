@@ -2,25 +2,19 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Personal website</title>
   <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./style.css">
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Bootstrap 4 Cards with Navigation Tabs</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="./css/style.css"> -->
 
 </head>
 <body>
+<!-- partial:index.partial.html -->
 
-    
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-light bg-light">
                 <a href="#" class="navbar-brand">Brand</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -31,157 +25,272 @@
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="projects.html" class="nav-item nav-link">Projects</a>
-                        <a href="#" class="nav-item nav-link" tabindex="-1">Terminal</a>
-                    </div>
+                        <a onclick="launchJSTerminal();" class="terminalHandle">new terminal</a>
+                </div>
               
                 </div>
+
+                <div id="contTerminal" class="closedTerminal terminalsizeanimated" style="overflow:visible">
+                        <div id="onlineTerminal" contenteditable spellcheck="false"></div>
+                        <a onclick="launchJSTerminal();" class="terminalHandle"></a>
+                      </div>
             </nav>
 
-
-            <div class="card text-center">
-                    <div class="card-header">
-                      <ul class="nav nav-tabs card-header-tabs">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#Software">Active</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#Hardware">Link</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                      </ul>
-                    </div>
+          
 
 
-                    <div class="card-body">
-                        <div id="Software" class="row">
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" id="bologna-list" role="tablist">
 
-                            <div class="col">
+            <li class="nav-item">
+              <a class="nav-link active" href="#BCI" role="tab" aria-controls="description" aria-selected="true">Brain-Computer-Interface</a>
+            </li>
 
-                                    <div class="card" style="width: 18rem;">
-                                            <img src="./images/Rpi-Bot.webp" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Card title</h5>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                    </div>
+            <li class="nav-item">
+              <a class="nav-link"  href="#software" role="tab" aria-controls="history" aria-selected="false">Software</a>
+            </li>
 
-                            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#iot" role="tab" aria-controls="deals" aria-selected="false">IOT</a>
+            </li>
 
-                            <div class="col">
+            <li class="nav-item">
+              <a class="nav-link" href="#machine_learning" role="tab" aria-controls="deals" aria-selected="false">Machine Learning</a>
+            </li>
 
-                                    <div class="card" style="width: 18rem;">
-                                            <img src="./images/tremble_1.webp" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Card title</h5>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                    </div>
-                                    
-                            </div>
+          </ul>
+        </div>
+        <div class="card-body">
 
-                            <div class="col">
+           <div class="tab-content mt-3">
+            <div class="tab-pane active" id="BCI" role="tabpanel">
+             
+              <div id="Software" class="row">
 
-                                    <div class="card" style="width: 18rem;">
-                                            <img src="..." class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Card title</h5>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                    </div>
-                                    
-                            </div>
+                        <div class="col">
 
-                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                        <img src="./images/BCI_main.webp" class="card-img-top">
+                                        <div class="card-body">
+                                          <h5 class="card-title">BrainHack Wheelchair</h5>
+                                          <p class="card-text">A wheelchair which is controlled with an EEG Headset and a Raspberry Pi.</p>
+                                          <a href="brainhack.xyz" class="btn btn-primary">Explore</a>
+                                        </div>
+                                </div>
 
-                                    <div class="card" style="width: 18rem;">
-                                            <img src="..." class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Card title</h5>
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                                            </div>
-                                    </div>
-                                    
-                            </div>
-
-                            
                         </div>
 
+                        <div class="col">
 
-
-
-
-
-                        <div id="Hardware" class="row">
-
-                                <div class="col">
-    
-                                        <div class="card" style="width: 18rem;">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                  <h5 class="card-title">Card title</h5>
-                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                                </div>
+                                <div class="card" style="width: 18rem;">
+                                        <img src="./images/BCI_Musical_lights.webp" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">BrainHack Musical Lights</h5>
+                                          <p class="card-text">Musical Lights controlled with your Brainwaves and a Raspberry Pi.</p>
+                                          <a href="#" class="btn btn-primary">Explore</a>
                                         </div>
-    
                                 </div>
-    
-                                <div class="col">
-    
-                                        <div class="card" style="width: 18rem;">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                  <h5 class="card-title">Card title</h5>
-                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                                </div>
-                                        </div>
-                                        
-                                </div>
-    
-                                <div class="col">
-    
-                                        <div class="card" style="width: 18rem;">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                  <h5 class="card-title">Card title</h5>
-                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                                </div>
-                                        </div>
-                                        
-                                </div>
-    
-                                <div class="col">
-    
-                                        <div class="card" style="width: 18rem;">
-                                                <img src="..." class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                  <h5 class="card-title">Card title</h5>
-                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                                </div>
-                                        </div>
-                                        
-                                </div>
-    
                                 
-                            </div>
+                        </div>
 
+                        <div class="col">
 
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card" style="width: 18rem;">
+                                        <img src="./images/Rpi-Bot.webp" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">BrainHack Robo</h5>
+                                          <p class="card-text">Robot controlled with your Brainwaves and a Raspberry Pi. Check it out on Github!</p>
+                                          <a href="#" class="btn btn-primary">Explore</a>
+                                        </div>
+                                </div>
+                                
+                        </div>
+
+                        <div class="col">
+
+                                <div class="card" style="width: 18rem;">
+                                        <img src="./images/BCI_VR.webp" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Mind-VR Interface</h5>
+                                          <p class="card-text">An Inteface between our Brain and Virtual World !
+                                                        Controlling virtual things with your physical Mind !</p>
+                                          <a href="#" class="btn btn-primary">Explore</a>
+                                        </div>
+                                </div>
+                                
+                        </div>
+
+                        
                     </div>
-                  </div>
 
+            </div>
+      
 
             
+            <div class="tab-pane" id="software" role="tabpanel" aria-labelledby="deals-tab">
+                        <div id="Software" class="row">
+
+                                        <div class="col">
+                
+                                                <div class="card" style="width: 18rem;">
+                                                        <img src="./images/tremble_1.webp" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                          <h3 class="card-title">Tremble Turn</35>
+                                                          <h5 class="card-title">Navigation made Simple</h5>
+                                                          <p class="card-text">No need to look at the Phone for every turn ! 
+                                                                        The App sends a signal to two Smartwatchs at every turn which vibrates accordingly ! </p>
+                                                          <a href="#" class="btn btn-primary">Explore</a>
+                                                        </div>
+                                                </div>
+                
+                                        </div>
+                
+                                        <div class="col">
+                
+                                                <div class="card" style="width: 18rem;">
+                                                        <img src="./images/food.webp" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">LOC - Lord of Connoisseur</h5>
+                                                          <h5 class="card-title">An Online Food Ordering System</h5>
+                                                          
+                                                          <p class="card-text">An online system for restraunt owners to bring their business online and for customers to buy food at the click of a button !</p>
+                                                          <a href="#" class="btn btn-primary">Explore</a>
+                                                        </div>
+                                                </div>
+                                                
+                                        </div>
+                
+                                        <div class="col">
+                
+                                                <div class="card" style="width: 18rem;">
+                                                        <img src="./images/Minesweeper.webp" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">MineSweeper</h5>
+                                                          <p class="card-text">Minesweeper is a single-player puzzle video game. The objective of the game is to clear a rectangular board containing hidden "mines" or bombs without detonating any of them, with help from clues about the number of neighboring mines in each field</p>
+                                                          <a href="#" class="btn btn-primary">Explore</a>
+                                                        </div>
+                                                </div>
+                                                
+                                        </div>
+                
+                                        <div class="col">
+                
+                                                <div class="card" style="width: 18rem;">
+                                                        <img src="./images/BCI_Robot.webp" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">Whats the Word?</h5>
+                                                          <h5 class="card-title">A Progressive Web Dictionary App</h5>
+                                                          
+                                                          <p class="card-text">Progressive web applications (PWAs) are web applications that load like regular web pages or websites but can offer the user functionality such as working offline, push notifications, and device hardware access traditionally available only to native applications </p>
+                                                          <a href="#" class="btn btn-primary">Explore</a>
+                                                        </div>
+                                                </div>
+                                                
+                                        </div>
+                
+                                        
+                                    </div>
+            </div>
+             
+            <div class="tab-pane" id="iot" role="tabpanel" aria-labelledby="deals-tab">
+                        <div id="Software" class="row">
+
+                                        <div class="col">
+                
+                                                <div class="card" style="width: 18rem;">
+                                                        <img src="./images/Rpi-Bot.webp" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">Rpi-Bot</h5>
+                                                          <h5 class="card-title">Raspberry-pi Controlled controlled Robot</h5>
+                                                          
+                                                          <p class="card-text">A Raspberry-pi based Smart Robot controlled via Android App with Bluetooth or WiFi. It has smart Obstacle Avoidance and a Live Video Streaming with Motion Detection.
+                                                                </p>
+                                                          <a href="#" class="btn btn-primary">Explore</a>
+                                                        </div>
+                                                </div>
+                
+                                        </div>
+                
+                                        <div class="col">
+                
+                                                <div class="card" style="width: 18rem;">
+                                                        <img src="./images/Home_Automation.webp" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">SHA - Smart Home Automator</h5>
+                                                          <h5 class="card-title">Switch to a Smart Home!</h5>
+                                                          <p class="card-text">Switch on the lights, fans, television and a variety of things right with a touch. It can sense the temperature and adjust the cooling accordingly. A Live Video feed with Motion Detection to catch those Intruders !</p>
+                                                          <a href="#" class="btn btn-primary">Explore</a>
+                                                        </div>
+                                                </div>
+                                                
+                                        </div>
+                
+                                        
+                
+                                        
+                                    </div>
+            </div>
+
+
+       
+            <div class="tab-pane" id="machine_learning" role="tabpanel" aria-labelledby="history-tab">  
+                        <div id="Software" class="row">
+
+                                        <div class="col">
+                
+                                                <div class="card" style="width: 18rem;">
+                                                        <img src="./images/Brain_Informatics.webp" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">Brain Informatics using Deep Learning</h5>
+                                                          <p class="card-text">Deep Learning based automated system which classifies the workload on Soldiers into 3 categories - High, Medium and Low using EEG signals !</p>
+                                                          <a href="#" class="btn btn-primary">Explore</a>
+                                                        </div>
+                                                </div>
+                
+                                        </div>
+                
+                                        <div class="col">
+                
+                                                <div class="card" style="width: 18rem;">
+                                                        <img src="./images/BCI_Musical_lights.webp" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">Natural Language Processor</h5>
+                                                          <p class="card-text">Extracting the most significant
+                                                                        words from a paragraph to summarize the
+                                                                        text by concentrating only on significant words.</p>
+                                                          <a href="#" class="btn btn-primary">Explore</a>
+                                                        </div>
+                                                </div>
+                                                
+                                        </div>
+                
+
+                                        
+                                    </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+
+<script  src="./js/script.js"></script>
+<script src="./js/terminal.js"></script>
+<script src="./js/projects.js"></script>
 </body>
 </html>
+
+
+
