@@ -238,7 +238,11 @@ img {
 
   /* overflow-x: hidden;
   overflow-y: overlay; */
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+
+ }
+
+
   #contTerminal::-webkit-scrollbar {
     background: none;
     width: 9px; }
@@ -274,7 +278,7 @@ img {
     position: absolute;
     top: 20px;
     left: auto;
-    margin-left: -50px;
+    margin-left: -150px;
     background-image: url('../images/backterminalhandle2.png');
 
 
