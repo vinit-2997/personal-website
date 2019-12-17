@@ -1,8 +1,12 @@
 window._is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-	if (_is_mobile) {
-		// $('#contTerminal').remove();
-	} else {
+	// if (_is_mobile) 
+	// {
+	// 	// $('#contTerminal').remove();
+	// }
+
+	//  else 
+	//  {
 		//$('#contTerminal').css('position', 'absolute').css('minHeight', $(document).height()+'px');
 
 		//From: http://stackoverflow.com/questions/237104/array-containsobj-in-javascript
@@ -657,4 +661,4 @@ window._is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mi
 			//ga( 'send', 'event', 'toys', 'terminal', 'reset');
 		}
 		// Insanity ends here
-	}
+	//}
