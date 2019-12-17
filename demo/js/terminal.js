@@ -1,7 +1,7 @@
 window._is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 	if (_is_mobile) {
-		$('#contTerminal').remove();
+		// $('#contTerminal').remove();
 	} else {
 		//$('#contTerminal').css('position', 'absolute').css('minHeight', $(document).height()+'px');
 
