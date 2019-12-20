@@ -35,27 +35,40 @@
        background: -moz-linear-gradient(top, #c04848 6%, #480048 100%);
        background: -o-linear-gradient(top, #c04848 6%, #480048 100%); ">
     
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-                <a href="#" class="navbar-brand">Brand</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="projects.html" class="nav-item nav-link">Projects</a>
-                        <a onclick="launchJSTerminal();" class="nav-item nav-link terminalHandle">new terminal</a>
-                      </div>
-              
-                </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <!-- <a href="#" class="navbar-brand">Brand</a> -->
 
-                <div id="contTerminal" class="closedTerminal terminalsizeanimated" style="overflow:visible">
-                  <div id="onlineTerminal" contenteditable spellcheck="false"></div>
-                  <a onclick="launchJSTerminal();" class="terminalHandle"></a>
-                </div>
-            </nav>
+      <div class="logo">
+              <!-- <a href="#"><img src="https://www.w3jar.com/wp-content/uploads/2019/05/microsoft.png" alt="logo"></a> -->
+              <a href="index.html"><img src="./images/logo.ico" alt="logo"></a>
+
+      </div>
+
+
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+              <a href="index.html" class="nav-item nav-link active">HOME</a>
+              <a href="about.html" class="nav-item nav-link">ABOUT</a>
+              <a href="projects.html" class="nav-item nav-link">PROJECTS</a>
+              <!-- <a href="#" class="nav-item nav-link" tabindex="-1">TERMINAL</a> -->
+              <a onclick="launchJSTerminal();" class="nav-item nav-link terminalHandle">TERMINAL</a>
+
+          </div>
+    
+      </div>
+
+    
+
+  </nav>
+
+  <div id="contTerminal" class="closedTerminal terminalsizeanimated" style="overflow:visible">
+          <div id="onlineTerminal" contenteditable spellcheck="false"></div>
+          <a onclick="launchJSTerminal();" class="terminalHandle"></a>
+   </div>
 
     <!-- <div class="container-fluid">
       <div class="row">
@@ -148,13 +161,15 @@
       
 
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js'></script>
-
-  <script  src="./js/script.js"></script>
-  <script src="./js/terminal.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js'></script>
+      
+        <script  src="./js/script.js"></script>
+        <script src="./js/terminal.js"></script>
+        <!-- <script src="../particles.js"></script>
+        <script src="js/app.js"></script> -->
 </body>
 </html>
