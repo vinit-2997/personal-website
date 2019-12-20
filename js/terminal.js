@@ -376,21 +376,21 @@ window._is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mi
 			if (typeof customFunctionName === "undefined") {
 				response = 'You can try: ';
 				
-				response += ', <strong>comicSans()</strong>';
-				response += ', <strong>ieBug()</strong>';
-				response += ', <strong>facebook()()</strong>';
-				response += ', <strong>linkedin()</strong>';
-				response += ', <strong>github()</strong>';
-				response += ', <strong>medium()</strong>';
-				response += ', <strong>helvetica()</strong>';
-				response += ', <strong>reset()</strong>';
-				response += ', <strong>exit()</strong>';
-				response += '<strong>clear()</strong>/<strong>cls()</strong>';
+				response += '<strong>comicSans()</strong>,';
+				response += '\n<strong>ieBug()</strong>,';
+				response += '\n<strong>facebook()</strong>,';
+				response += '\n<strong>linkedin()</strong>,';
+				response += '\n<strong>github()</strong>,';
+				response += '\n<strong>medium()</strong>,';
+				response += '\n<strong>helvetica()</strong>,';
+				response += '\n<strong>reset()</strong>,';
+				response += '\n<strong>exit()</strong>,';
+				response += '\n<strong>clear()</strong>/<strong>cls()</strong>';
 				
 				
 				
 				
-				response += 'For more info <strong>help(\'functionName\')</strong>. e.g. <strong>help(\'ieBug\')</strong>';
+				response += '\n\nFor more info <strong>help(\'functionName\')</strong>. e.g. <strong>help(\'ieBug\')</strong>';
 			} else {
 				customFunctionName = customFunctionName.replace('()', '').toLowerCase();
 				response = 'No no. <strong>' + customFunctionName + '</strong> is no here.';

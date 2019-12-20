@@ -24,13 +24,13 @@ li{list-style:none}
 
 
 
-   .home-bg{
+   /* .home-bg{
     background: url('../images/city_background.webp') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+  } */
 
 body, html {
   height: 100%;
