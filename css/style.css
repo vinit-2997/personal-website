@@ -65,7 +65,7 @@ body, html {
   align-content: center;
   position:fixed; 
   /* left:80px;  */
-  top:40%;
+  top:10%;
 }
 
 #h3-id{
@@ -115,6 +115,7 @@ span.cursor {
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
+  /* padding-right: 500px; */
 }
 
 @media (max-width: 768px) {
