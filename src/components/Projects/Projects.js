@@ -26,10 +26,7 @@ import ASL from "../../Assets/Projects/ASL1.png";
 
 
 
-
-
-
-import '/Users/vinit2997/Documents/my-website/Portfolio-master/src/components/Projects/style_proj.css';
+import '/Users/vinit2/Documents/GitHub/vinit-2997.github.io/src/components/Projects/style_proj.css';
 
 function Projects() {
   return (
