@@ -8,7 +8,7 @@ import {
   AiOutlineMedium
 
 } from "react-icons/ai";
-import { FaLinkedinIn, FaQuora, FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn, FaQuora, FaYoutube } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
@@ -67,12 +67,12 @@ function Footer() {
 
             <li className="social-icons">
               <a
-                href="https://www.facebook.com/vinit.todai"
+                href="https://www.youtube.com/channel/UC6CY9eWy2U44DBoVoEUlCAw"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <FaFacebookF />
+                <FaYoutube />
               </a>
             </li>
 

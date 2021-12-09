@@ -8,10 +8,10 @@ import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
-  AiOutlineMedium
+  AiOutlineMedium,
 
 } from "react-icons/ai";
-import { FaLinkedinIn, FaQuora, FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn, FaQuora, FaYoutube } from "react-icons/fa";
 
 
 function Home() {
@@ -80,12 +80,12 @@ function Home() {
 
               <li className="social-icons">
                 <a
-                  href="https://www.facebook.com/vinit.todai"
+                  href="https://www.youtube.com/channel/UC6CY9eWy2U44DBoVoEUlCAw"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <FaFacebookF />
+                  <FaYoutube />
                 </a>
               </li>
 
@@ -112,6 +112,9 @@ function Home() {
                   <FaQuora />
                 </a>
               </li>
+
+  
+              
 
 
               
