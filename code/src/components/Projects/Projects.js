@@ -26,7 +26,7 @@ import ASL from "../../Assets/Projects/ASL1.png";
 
 
 
-import '/Users/vinit2/Documents/GitHub/vinit-2997.github.io/src/components/Projects/style_proj.css';
+import '/Users/vinit2/Documents/GitHub/vinit-2997.github.io/code/src/components/Projects/style_proj.css';
 
 function Projects() {
   return (
@@ -52,7 +52,7 @@ function Projects() {
               imgPath={BCI_Wheelchair}
               isBlog={false}
               title="BrainHack Wheelchair - Smart Brain Controlled Wheelchair"
-              description="Reading your thoughts is now a reality. BrainHack Wheelchair is a Smart Wheelchair controlled with your Brain. It uses a Brainwave Reader to read your Brainwaves which are then decoded into the Android app into Attention, Meditation, Eye Blink Strength and Raw values. JUST FOCUS to move FORWARD, and Blink your eyes twice to turn it LEFT !!"
+              description="Reading your thoughts is now a reality! BrainHack Wheelchair is a Smart Wheelchair controlled with your Brain. JUST FOCUS to move FORWARD, and Blink your eyes twice to turn it LEFT !!"
               link="https://devpost.com/software/brainhack-wheelchair-smart-brain-controlled-wheelchair"
             />
           </Col>
@@ -62,7 +62,7 @@ function Projects() {
               imgPath={brainport}
               isBlog={false}
               title="BrainPort - Teleport your Mind with your BRAIN!"
-              description="A VR journey with your brain! BrainPort360 is a software which uses a Brainwave headset to record your brainwaves and process it in real time. The output is then sent to a VR world where you can control things and teleport to new places in the world with the force of your mind!"
+              description="A VR journey with your brain! Designed a VR environment in React 360 and integrated it with a brainwave headset, analyzing 5 brainwave bands in realtime and teleporting the user to 4 different locations in the virtual world with his thoughts, such as a beach or mountain!"
               link="https://devpost.com/software/brainport-teleport-your-mind-with-your-brain"
             />
           </Col>
@@ -136,6 +136,17 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={ASL}
+              isBlog={false}
+              title="Sign Language Translator"
+              description="Developed an American Sign Language translator with an accuracy of 96% using several ML algorithms such as Neural
+              Network, Random Forest, KNN, SVM, Logistic Regression, and Naive Bayes on the Leap Motion Controller ASL dataset"
+              link="https://devpost.com/software/sign-language-translator-7dm6x0"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={gestureAssistant}
               isBlog={false}
               title="GestureAssistant"
@@ -153,16 +164,7 @@ function Projects() {
               link="https://vinit-2997.github.io/projects.html#"
             />
           </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={ASL}
-              isBlog={false}
-              title="Sign Language Translator"
-              description="Developed an American Sign Language translator with an accuracy of 96% using several ML algorithms such as Neural
-              Network, Random Forest, KNN, SVM, Logistic Regression, and Naive Bayes on the Leap Motion Controller ASL dataset"
-              link="https://devpost.com/software/sign-language-translator-7dm6x0"
-            />
-          </Col>
+
   
      
         </Row>
