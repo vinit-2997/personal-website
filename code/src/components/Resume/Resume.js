@@ -4,7 +4,9 @@ import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
 import axios from "axios";
-import pdf from "../../Assets/Vinit_Todai_Northwestern_Resume.pdf";
+//import pdf from "../../Assets/Vinit_Todai_Northwestern_Resume.pdf";
+import pdf from "../../Assets/Vinit_Todai_Resume_Northwestern.pdf";
+
 import { AiOutlineDownload } from "react-icons/ai";
 
 
