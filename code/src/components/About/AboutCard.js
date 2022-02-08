@@ -8,7 +8,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Vinit Todai,  </span>
+            Hi Everyone, I am <span className="purple">Vinit Mahendra Todai,  </span>
             a creative software engineer with over 2 years of experience in software development and artificial intelligence.<br/> <br/> I'm currently pursuing a Master's degree in Artificial Intelligence at Northwestern University, which is ranked among the top ten universities in the United States.
             Prior to this, I worked as a Software Developer at Barclays - the bank who invented the first ATM machine...!.
             <br />
